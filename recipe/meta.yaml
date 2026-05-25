@@ -1,5 +1,5 @@
 {% set goname = "github.com/junegunn/fzf" %}
-{% set version = "0.73.0" %}
+{% set version = "0.73.1" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
@@ -11,7 +11,7 @@ package:
 source:
   - folder: {{ pkg_src }}
     url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: 393a79e3d504af3c5032508d2f33f1517a472bcad5c5081babf2b930f4fce74f
+    sha256: ae4f49f8606a7d28498208fa1b93c5d3b890719eea97e02559e66160138b750c
 
 build:
   number: 0
